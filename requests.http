@@ -1,0 +1,73 @@
+###
+POST http://localhost:3000/api/cliente HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "Arturo Peralta",
+    "direccion": "Av. Jalisco y 52",
+    "email": "Arturo04@beta.com",
+    "password": "123456",
+    "telefono": "6531001010"
+}
+
+###
+GET http://localhost:3000/api/cliente HTTP/1.1
+
+###
+GET http://localhost:3000/api/cliente/666e5fa967ef91f9f68ded39 HTTP/1.1
+
+###
+PUT http://localhost:3000/api/cliente/666e5fa967ef91f9f68ded39 HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "Angel Gabriel",
+    "direccion": "Av. Jalisco y 56",
+    "email": "Angel03@beta.com",
+    "password": "123456",
+    "telefono": "6531001020"
+}
+
+###
+DELETE http://localhost:3000/api/cliente/666e5fa967ef91f9f68ded39 HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "",
+    "direccion": "",
+    "email": "",
+    "password": "",
+    "telefono": ""
+}
+
+###
+POST http://localhost:3000/api/empleado HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "Jesus Peralta",
+    "email": "Arturo03@beta.com",
+    "password": "123456",
+    "telefono": "6539001010"
+}
+
+###
+GET http://localhost:3000/api/empleado HTTP/1.1
+
+###
+GET http://localhost:3000/api/empleado/66709a93714597fd7f0f7775 HTTP/1.1
+
+###
+PUT http://localhost:3000/api/empleado/66709a93714597fd7f0f7775 HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "Jesus Peralta",
+    "email": "Jesus10@beta.com",
+    "password": "123456",
+    "telefono": "6539001010"
+}
+
+###
+DELETE  http://localhost:3000/api/empleado/66709a93714597fd7f0f7775 HTTP/1.1
+Content-Type: application/json
